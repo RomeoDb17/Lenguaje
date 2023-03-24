@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Control De Versiones - Lenguaje</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Control De Versiones";
+        var mkdocs_page_input_path = "cdv.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Lenguaje
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Control De Versiones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ddc/">Digrama De Clases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../opt/">Optimizacion</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Lenguaje</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Control De Versiones</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <ol>
+<li>Ademas de Git, ¿que otros sistemas de control de versiones existen?<ul>
+<li>CVS, Subversion, SourceSafe, ClearCase, Darcs, Bazaar, Plastic SCM, Git, SCCS, Mercurial, Perforce, Fossil SCM, Team Foundation Server.</li>
+</ul>
+</li>
+<li>En Git, ¿qué tres áreas existen?<ul>
+<li>Git Directory</li>
+<li>Working Directory</li>
+<li>Staging Area</li>
+</ul>
+</li>
+<li>Busca en Internet un buen tutorial de GIT y realízalo. ¿De qué tutorial se trata?<ul>
+<li>Curso acelerado de Git y GitHub para principiantes (https://www.youtube.com/watch?v=SWYqp7iY_Tc)</li>
+<li>En el tutorial se ve todos los comandos basicos y mas importantes de Git y GitHUb</li>
+</ul>
+</li>
+<li>Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.<ul>
+<li><a href="https://www.youtube.com/watch?v=uR6G2v_WsRA">https://www.youtube.com/watch?v=uR6G2v_WsRA</a></li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git config</code>?<ul>
+<li>Para definir valores de configuración de Git a nivel de un proyecto global o local.</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git init</code>?<ul>
+<li>Crea un nuevo repositorio de Git</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git clone</code>?<ul>
+<li>Para apuntar a un repositorio existente y clonar o copiar dicho repositorio en un nuevo directorio, en otra ubicación.</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git status</code>?<ul>
+<li>Muestra el estado del directorio de trabajo y del área del entorno de ensayo</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git add</code>?<ul>
+<li>Añade un cambio del directorio de trabajo en el entorno de ensayo</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git commit</code>?<ul>
+<li>Para confirmar una instantánea del directorio del entorno de ensayo en el historial de confirmaciones de los repositorios.</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git log</code>?<ul>
+<li>Para explorar el historial del repositorio</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git reset HEAD nombrearchivo</code>?<ul>
+<li>Es un comando potente que sirve para deshacer los cambios locales en el estado de un repositorio de Git</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git checkout -- nombrearchivo</code>?<ul>
+<li>Sirve para deshacer los ultimos cambios sobre el proyecto o sobre un archivo en concreto desde que se hizo el último cambio.</li>
+</ul>
+</li>
+<li>Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.<ul>
+<li><a href="https://www.youtube.com/watch?v=FyAAIHHClqI">https://www.youtube.com/watch?v=FyAAIHHClqI</a></li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git branch</code>?<ul>
+<li>Te permite crear, enumerar y eliminar ramas, así como cambiar su nombre.</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git checkout</code>?<ul>
+<li>Te permite desplazarte entre las ramas creadas por git branch</li>
+</ul>
+</li>
+<li>En Git, ¿para qué sirve el comando <code>git merge</code>?<ul>
+<li>Permite tomar las líneas independientes de desarrollo creadas por git branch e integrarlas en una sola rama.</li>
+</ul>
+</li>
+<li>En Git, explica cómo funciona la fusión (merge) de tipo fast-forward.<ul>
+<li>Realizar fusiones de avance rápido en las situaciones donde exista un proceso lineal desde el extremo de la rama actual y que se extienda hasta la rama de destino</li>
+</ul>
+</li>
+<li>En Git, explica cómo funciona la fusión (merge) de tipo 3-way.<ul>
+<li>La fusión de <em>3-way</em> se basa en 3 confirmaciones diferentes:<ul>
+<li>El ancestro común.</li>
+<li>La punta de la rama Master.</li>
+<li>La punta de la rama de funciones.</li>
+</ul>
+</li>
+<li>Git identifica estas tres confirmaciones mediante instantáneas. Git compara el ancestro común con cada una de las confirmaciones de punta.</li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ddc/" class="btn btn-neutral float-right" title="Digrama De Clases">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="../ddc/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

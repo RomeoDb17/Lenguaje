@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Optimizacion - Lenguaje</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Optimizacion";
+        var mkdocs_page_input_path = "opt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Lenguaje
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cdv/">Control De Versiones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ddc/">Digrama De Clases</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Optimizacion</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Lenguaje</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Optimizacion</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Optimización</p>
+<ol>
+<li>¿Qué se entiende por hediondez del código? Pon al menos 5 ejemplos.</li>
+</ol>
+<p>La hediondez del código, también conocida como "code smell" en inglés, se refiere a un conjunto de características del código fuente que pueden indicar la presencia de problemas en el diseño o la implementación del software. Estas características no son necesariamente errores de programación, pero pueden dificultar la comprensión, el mantenimiento o la escalabilidad del código. Aquí hay algunos ejemplos comunes de hediondez del código:</p>
+<ol>
+<li>Código duplicado: cuando se repiten bloques de código similares en varias partes del programa, lo que dificulta la corrección y la actualización del software.</li>
+<li>Clases o métodos demasiado grandes: cuando las clases o los métodos son demasiado extensos y hacen demasiado trabajo, lo que dificulta la comprensión y el mantenimiento del código.</li>
+<li>Nombres de variables o funciones confusos: cuando los nombres de las variables o las funciones no son claros o descriptivos, lo que dificulta la comprensión del código.</li>
+<li>Dependencias circulares: cuando dos o más clases se llaman entre sí en un ciclo, lo que dificulta la comprensión y el mantenimiento del software.</li>
+<li>
+<p>Comentarios excesivos o inadecuados: cuando se usan demasiados comentarios en el código o cuando los comentarios no reflejan adecuadamente lo que está sucediendo en el código, lo que dificulta la comprensión del programa.</p>
+</li>
+<li>
+<p>¿Qué tipo de herramienta utilizamos para hacer análisis estático del código?</p>
+</li>
+</ol>
+<p>Para hacer análisis estático del código se utilizan herramientas llamadas "análisis estático de código" o "static code analysis" en inglés. Estas herramientas examinan el código fuente de un programa sin ejecutarlo y buscan posibles errores, vulnerabilidades, redundancias, violaciones de estándares de codificación y otros problemas comunes.</p>
+<p>Existen diversas herramientas de análisis estático de código disponibles en el mercado, algunas de ellas son gratuitas y de código abierto, mientras que otras son comerciales. Algunas de las herramientas más populares son:</p>
+<ol>
+<li>SonarQube</li>
+<li>Checkstyle</li>
+<li>PMD</li>
+<li>ESLint</li>
+<li>Code Climate</li>
+<li>ReSharper</li>
+<li>Coverity</li>
+<li>Infer</li>
+<li>FindBugs</li>
+<li>
+<p>Lint</p>
+</li>
+<li>
+<p>¿Qué sitios web nos permiten hacer análisis estático del código o <strong>Continuous Inspection</strong>?</p>
+</li>
+<li>
+<p>SonarCloud: Es una plataforma gratuita de análisis estático de código basada en la nube que admite varios lenguajes de programación, incluyendo Java, JavaScript, C#, C/C++, Python y más. Ofrece análisis continuo del código y proporciona informes detallados sobre la calidad del código, la seguridad y la cobertura de pruebas.</p>
+</li>
+<li>CodeClimate: Ofrece análisis continuo del código para múltiples lenguajes de programación, incluyendo Ruby, Python, JavaScript, PHP, Java y TypeScript. Proporciona informes detallados sobre la calidad del código, la seguridad, la cobertura de pruebas y el rendimiento.</li>
+<li>Codacy: Es una plataforma de análisis estático de código que admite más de 30 lenguajes de programación. Proporciona análisis continuo del código, integración con sistemas de control de versiones y herramientas de colaboración.</li>
+<li>BetterCodeHub: Es una herramienta de análisis estático de código que se enfoca en la aplicación de los principios del "12 Factor App" para mejorar la calidad del código. Proporciona informes detallados sobre la calidad del código, la arquitectura, el diseño y las mejores prácticas.</li>
+<li>
+<p>DeepCode: Es una herramienta de análisis estático de código basada en la inteligencia artificial que ofrece análisis continuo del código para múltiples lenguajes de programación. Proporciona informes detallados sobre la calidad del código, la seguridad y las mejores prácticas.</p>
+</li>
+<li>
+<p>Instala en Netbeans el plugin <strong>FindBugs</strong>, si no lo tienes aún instalado.</p>
+</li>
+</ol>
+<p><img alt="211801034-69db1e8e-1f1c-4fd0-b840-2e47e0bcf42d" src="/img/211801034-69db1e8e-1f1c-4fd0-b840-2e47e0bcf42d.png" /></p>
+<p><img alt="211783961-839adcd3-49f6-4c8e-a965-1617ea01cedf" src="/img/211783961-839adcd3-49f6-4c8e-a965-1617ea01cedf.png" /></p>
+<ol>
+<li>
+<p>Realiza <strong>análisis estático de código</strong> para las clases del proyecto <em>miapp</em>. Consulta el siguiente enlace:<img alt="211817037-645ac42d-a4b4-4be4-99a5-dbaec99ab0ca" src="/img/211817037-645ac42d-a4b4-4be4-99a5-dbaec99ab0ca.png" /></p>
+</li>
+<li>
+<p>Indica al menos un <code>code smell</code> relevante de cada clase. Explica cómo podría solucionarse.</p>
+</li>
+<li>
+<p>Análisis dinámico: unit tests</p>
+</li>
+<li>
+<p>Análisis estático: lint</p>
+</li>
+<li>
+<p>¿Qué es la refactorización?</p>
+</li>
+<li>
+<p>Es el proceso de reestructurar un código fuente, alterando su estructura interna sin cambiar su comportamiento externo.</p>
+</li>
+<li>
+<p>¿Qué técnicas se utilizan a menudo a la hora de refactorizar?</p>
+</li>
+<li>
+<p>Técnicas:</p>
+<ul>
+<li>Renombrado de variables</li>
+<li>Pasar código duplicado a funciones</li>
+<li>Eliminación de código inalcanzable</li>
+<li>Eliminación de código redundante</li>
+<li>Eliminación de código muerto</li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ddc/" class="btn btn-neutral float-left" title="Digrama De Clases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ddc/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
