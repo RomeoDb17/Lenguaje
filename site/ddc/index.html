@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Digrama De Clases - Lenguaje</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Lenguaje</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../cdv/" class="nav-link">Control De Versiones</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Digrama De Clases</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../opt/" class="nav-link">Optimizacion</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../cdv/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../opt/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><strong>Diagramas de casos de uso</strong></p>
+<ol>
+<li>Nombra y describe brevemente los elementos que se utilizan en un diagrama de casos de uso. Busca información si es necesario.</li>
+<li><strong>Actores</strong> : es <em>cualquier entidad que desempeñe un papel</em> en un sistema determinado. Puede ser una persona, una organización o un sistema externo.</li>
+<li><strong>Límites del sistema (sujeto)</strong> : refleja los límites o <em>alcances que abarca</em> un determinado sistema. Se utiliza para reflejar diferentes áreas dentro del mismo.</li>
+<li><strong>Casos de uso</strong> : se utiliza para representar una de las funcionalidades que realiza el sistema. Es una secuencia de acciones que hace el sistema y que producen un resultado que puede percibir un usuario.</li>
+<li>
+<p><strong>Relaciones</strong> : la interacción entre <em>dos casos de uso</em> o de <em>un actor con un caso de uso</em> se representa por medio de una relación. Las principales <em>relaciones</em> son: Generalización (Generalization), Inclusión (Include) y Extensión (Extends).</p>
+</li>
+<li>
+<p>Por cada ejemplo de diagrama de casos de uso que aparece en las diapositivas, realiza su interpretación. Escribe la descripción con tus palabras.</p>
+</li>
+</ol>
+<p><img alt="UML_diagrama_caso_de_uso" src="/img/UML_diagrama_caso_de_uso.svg" /></p>
+<p><strong>Diagramas de secuencia</strong></p>
+<ol>
+<li>Nombra y describe brevemente los elementos que se utilizan en un diagrama de secuencia. Busca información si es necesario.</li>
+<li><strong>Objetos</strong> : son bloques de construcción básicos de los diagramas UML y representan ciertas características de un elemento del sistema, que varían dependiendo del diagrama.</li>
+<li><strong>Líneas de vida</strong> : son <em>líneas discontinuas</em> que sale del objeto y avanza en el tiempo desde arriba hacia abajo.</li>
+<li><strong>Mensajes</strong> : es un elemento con nombre que define un tipo específico de comunicación entre <em>líneas de vida</em> de una interacción.</li>
+<li><strong>Ocurrencias de Ejecución</strong> : <em>periodo de tiempo</em> durante el cual <em>un objeto</em> está <em>en ejecución</em>.</li>
+<li>
+<p><strong>Ocurrencias de destrucción</strong> : <em>momento</em> en el cual <em>un objeto es destruido</em>.****</p>
+</li>
+<li>
+<p>Por cada ejemplo de diagrama de secuencia que aparece en las diapositivas, realiza su interpretación. Escribe la descripción con tus palabras.</p>
+</li>
+</ol>
+<p><img alt="Ejemplo_1_secuencia" src="/img/Ejemplo_1_secuencia.png" /></p>
+<p><strong>Diagramas de estados</strong></p>
+<ol>
+<li>Nombra y describe brevemente los elementos que se utilizan en un diagrama de estados. Busca información si es necesario.</li>
+<li>Estado: Un estado representa una condición o situación en la que se encuentra el sistema. Se representa mediante un rectángulo con esquinas redondeadas y se etiqueta con un nombre descriptivo.</li>
+<li>Transición: Una transición es una relación que describe el cambio de un estado a otro en respuesta a un evento o acción. Se representa mediante una flecha dirigida desde el estado de origen al estado de destino y se etiqueta con una etiqueta que describe la acción que desencadena la transición.</li>
+<li>Evento: Un evento es una acción que desencadena una transición. Puede ser un estímulo externo o interno que causa un cambio en el sistema. Se representa mediante una etiqueta en la flecha que conecta los estados de origen y destino.</li>
+<li>Acción: Una acción es una actividad que se realiza cuando se produce una transición. Puede ser una acción interna del sistema o una acción que se realiza en respuesta a un evento externo. Se representa mediante una etiqueta en la flecha que conecta los estados de origen y destino.</li>
+<li>Punto de inicio y fin: El punto de inicio es el estado inicial del sistema, desde donde se inicia el diagrama de estados. Se representa mediante un pequeño círculo conectado por una flecha al primer estado del sistema. El punto final es el estado final del sistema, donde termina el diagrama de estados. Se representa mediante un pequeño círculo conectado por una flecha al último estado del sistema.</li>
+<li>
+<p>Jerarquía de estados: Los diagramas de estados también pueden tener una jerarquía de estados, donde un estado puede tener subestados y transiciones internas. Se representan mediante una caja contenedora alrededor de los subestados y se etiquetan con el nombre del estado principal.</p>
+</li>
+<li>
+<p>Por cada ejemplo de diagrama de estados que aparece en las diapositivas, realiza su interpretación. Escribe la descripción con tus palabras.</p>
+</li>
+</ol>
+<p><img alt="Ejemplo_1_estado" src="/img/Ejemplo_1_estado.png" /></p>
+<p><strong>Diagramas de actividades</strong></p>
+<ol>
+<li>Nombra y describe brevemente los elementos que se utilizan en un diagrama de actividades. Busca información si es necesario.</li>
+<li>Actividad: Una actividad es una tarea que se realiza en el sistema y que contribuye al logro de un objetivo. Se representa mediante un rectángulo con esquinas redondeadas y se etiqueta con un nombre descriptivo.</li>
+<li>Acción: Una acción es una tarea atómica que se realiza como parte de una actividad. Puede ser una acción interna del sistema o una acción que se realiza en respuesta a un evento externo. Se representa mediante un rectángulo con esquinas rectas y se etiqueta con un nombre descriptivo.</li>
+<li>Transición: Una transición es una relación que describe el flujo de control entre dos actividades o acciones. Se representa mediante una flecha dirigida desde la actividad o acción de origen a la actividad o acción de destino y se etiqueta con una condición que debe cumplirse para que se produzca la transición.</li>
+<li>Decisión: Una decisión es un punto en el diagrama de actividades donde se toma una decisión basada en una condición. Se representa mediante un rombo y se etiqueta con la condición que debe cumplirse para que se tome una u otra ruta.</li>
+<li>Actividad inicial y final: La actividad inicial representa el punto de inicio del diagrama de actividades y se representa mediante un círculo negro. La actividad final representa el punto de finalización del diagrama de actividades y se representa mediante un círculo redondeado.</li>
+<li>
+<p>Partición: La partición se utiliza para dividir el diagrama de actividades en diferentes secciones o particiones, cada una de las cuales representa una actividad o proceso independiente. Se representa mediante una línea vertical discontinua y se etiqueta con el nombre de la partición.</p>
+</li>
+<li>
+<p>Por cada ejemplo de diagrama de actividades que aparece en las diapositivas, realiza su interpretación. Escribe la descripción con tus palabras.<img alt="Ejemplo_1_actividades" src="/img/Ejemplo_1_actividades.png" /></p>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
