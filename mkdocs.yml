@@ -1,6 +1,0 @@
-site_name: Lenguaje
-theme: readthedocs
-nav:
-- Control De Versiones: 'cdv.md'
-- Digrama De Clases: 'ddc.md'
-- Optimizacion: 'opt.md'
